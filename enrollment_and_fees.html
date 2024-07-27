@@ -35,6 +35,24 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+
 </head>
 
 <body>
@@ -49,22 +67,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
 
           <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about_academix.html">About Academix</a></li>
               <li><a href="gallery.html">Gallery</a></li>
-
-              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
             </ul>
           </li>
           <li><a href="program.html">Program</a></li>
@@ -73,7 +81,7 @@
           <li><a href="blog.html">Blog</a></li> -->
 
           <!-- <li><a href="contact.html">Contact</a></li> -->
-          <li><a href="enrollment_and_fees.html" class="getstarted">Enrollment & Fees</a></li>
+          <li><a href="enrollment_and_fees.html" class="getstarted" class="active">Enrollment & Fees</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -81,59 +89,85 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <main id="main">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
 
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Academix</span></h2>
-              <p class="animate__animated animate__fadeInUp"> Empowering young minds & igniting curiosity | Dream, Explore & Imagine</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More | About Academix</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Lead by highly experienced and devoted team</h2>
-              <p class="animate__animated animate__fadeInUp">We provide exceptional care for children in a healthy, professional and fun environment</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">See More | Gallery</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">All rounded curriculum & facilitiy</h2>
-              <p class="animate__animated animate__fadeInUp">Designed to provide all arounded curriculum for mental, physical & emotional development</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More | Program</a>
-            </div>
-          </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Enrollment & Fees</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Enrollment & Fees</li>
+          </ol>
         </div>
 
       </div>
+    </section><!-- End Breadcrumbs -->
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
+   <!-- ======= Services Section ======= -->
+   <section id="services" class="services">
+    <div class="container">
+       
+      <div class="row">
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="bi bi-calendar4-week"></i>
+            <!-- <br> -->
+            <h4><a href="#">Tuition & Fees</a></h4>
+            <p> We provide breakfast, lunch and snacks. Playing toys and equipments are also included. Parents are welcome to bring additional items.</p>
+            <table>
+              <tr>
+                <th>Category</th>
+                <th>Monthly</th>
+                <th>Daily</th>
+              </tr>
+              <tr>
+                <td>Infants</td>
+                <td>$ 2800</td>
+                <td>$ 150</td>
+              </tr>
+              <tr>
+                <td>Toddlers</td>
+                <td>$ 2400</td>
+                <td>$ 130</td>
+              </tr>
+              <tr>
+                <td>Preschool</td>
+                <td>$ 2400</td>
+                <td>$ 130</td>
+              </tr>
+              <tr>
+                <td>Pre-K</td>
+                <td>$ 2400</td>
+                <td>$ 130</td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="bi bi-calendar4-week"></i>
+            <br>
+            <!-- <h4><a href="#">Apply Now</a></h4> -->
+            <h4>
+              <form action="https://forms.gle/Z5WG8b8eVGbcgf5G7">
+              <input type="submit" formtarget="_blank" value="Apply Now" />
+             </form>
+            </h4>
+            <p> Please submit the application by following the link above. We review and update applicants on a weekly basis. </p>
+
+          </div>
+        </div>
+       
+      </div>
+    </div>
 
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End Services Section -->
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -170,17 +204,6 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-
-          <!-- <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
